@@ -1,0 +1,17 @@
+#!/bin/bash
+
+COUNT=100
+
+while [ ${COUNT} -gt 10 ]
+
+do 
+
+echo "current number is $COUNT"
+
+COUNT=$((COUNT-5))
+
+done
+
+echo "count has reached 10"
+
+

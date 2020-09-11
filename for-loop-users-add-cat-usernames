@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# DESCRITPION: ADDING USERS FROM THE USERNAMES FILE
+
+# AUTHOR: JANE WAWERU
+
+# DATE: SEPTEMBER 9TH 2020
+
+for i in $(cat /home/kairitu/sed-and-awk/usernames);
+
+do
+
+	echo "Creating user $i, please wait ..."
+
+	sleep 2
+
+	useradd -m $i
+
+	echo "user $i added successfully"
+
+done
+
+sleep 3
+
+echo "The following users were created $(cat /home/kairitu/sed-and-awk/usernames)"

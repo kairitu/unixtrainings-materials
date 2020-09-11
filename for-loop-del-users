@@ -1,0 +1,20 @@
+#!/bin/bash
+
+for i in $(cat /home/kairitu/sed-and-awk/usernames);
+
+do
+
+echo "Deleting username $i, please wait... "
+
+userdel -r $i
+
+echo "user $i deleted"
+
+sleep 2
+
+
+done
+
+
+echo "all users deleted from file usernames"
+

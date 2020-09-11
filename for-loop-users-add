@@ -1,0 +1,19 @@
+#!/bin/bash
+
+for i in nuname1 nuname2 nuname3 nuname4;
+
+do
+
+echo "Creating username $i, please wait... "
+
+useradd $i
+
+echo "user $i created"
+
+sleep 2
+
+
+done
+
+
+
